@@ -1,0 +1,16 @@
+:root {
+    --backgroundColor: white;
+    --lightContrastColor: lightgrey;
+    --darkContrastColor: rgb(80, 80, 80);
+    --foregroundColor: black;
+
+    --primaryColor: #002e5d;
+}
+
+.background-primary{
+    background-color: var(--primaryColor);
+}
+
+.container {
+    margin-top: 20px;
+}
