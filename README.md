@@ -2,4 +2,4 @@
 
 ## Website Progress
 * Set up an index.html and a basic navbar for the site - Ryan
-* Started on scedule page - Ryan
+* Started on schedule page - Ryan
