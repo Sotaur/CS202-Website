@@ -1,5 +1,6 @@
 class ScheduleValue{
-    constructor(name){
+    constructor(name, assignment){
         this.name = name;
+        this.assignment = assignment;
     }
 }
