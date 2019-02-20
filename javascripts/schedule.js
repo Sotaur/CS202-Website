@@ -26,15 +26,15 @@ function fillTable() {
     }
 }
 
-function getPreReading(scheduleValue){
-    if (scheduleValue.assignment == null){
+function getPreReading(scheduleValue) {
+    if (scheduleValue.assignment == null) {
         return '';
     } else {
-        return '<a href="' + scheduleValue.assignment + '"> ' + scheduleValue.assignment + ' </a>';
+        return '<a href="' + scheduleValue.assignment + '"> ' + 'Pre-Class Assignment' + ' </a>';
     }
 }
 
 
-$(document).ready(function () {
+$(document).ready(function() {
     fillTable();
 })
