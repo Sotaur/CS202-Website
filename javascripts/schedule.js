@@ -30,7 +30,7 @@ function getPreReading(scheduleValue) {
     if (scheduleValue.assignment == null) {
         return '';
     } else {
-        return '<a href="' + scheduleValue.assignment + '"> ' + 'Pre-Class Assignment' + ' </a>';
+        return '<a href="' + scheduleValue.assignment + '" target="_blank"> ' + 'Pre-Class Assignment' + ' </a>';
     }
 }
 
