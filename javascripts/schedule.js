@@ -19,8 +19,8 @@ function fillTable() {
     for (let i = 0; i < classes.length; i++) {
         $('#table_body').append(
             '<tr>' +
-            '<td>' + classes[i].name + '</td>' +
-            '<td>' + getPreReading(classes[i]) + '</td>' +
+            '<td class="class_name">' + classes[i].name + '</td>' +
+            '<td class="class_link">' + getPreReading(classes[i]) + '</td>' +
             '</tr>'
         );
     }
