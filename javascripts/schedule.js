@@ -1,6 +1,6 @@
 var classes = [
     new ScheduleValue('What is Software Engineering?', null),
-    new ScheduleValue('UI Design Basics', 'https://docs.google.com/document/d/1RZ7O4ySqMvLBCcE-jWCM_1Ba_z2AvpjMOcn-gsYemNs/edit?usp=sharing'),
+    new ScheduleValue('UI Design Basics', 'pages/preclass_assignments/UI Design Basics.pdf'),
     new ScheduleValue('Creating Wireframe and Screenflow Diagrams with LucidChart', null),
     new ScheduleValue('UML Overview. UML Class Diagrams.', null),
     new ScheduleValue('UML Sequence Diagrams', null),
@@ -20,7 +20,7 @@ function fillTable() {
         $('#table_body').append(
             '<tr>' +
             '<td class="class_name">' + classes[i].name + '</td>' +
-            '<td class="class_link">' + getPreReading(classes[i]) + '</td>' +
+            '<td>' + getPreReading(classes[i]) + '</td>' +
             '</tr>'
         );
     }
@@ -29,8 +29,9 @@ function fillTable() {
 function getPreReading(scheduleValue) {
     if (scheduleValue.assignment == null) {
         return '';
+        // return '<a href="#" target="_blank" class="btn class_link" role="button">View Assignment</a>';
     } else {
-        return '<a href="' + scheduleValue.assignment + '" target="_blank"> ' + 'Pre-Class Assignment' + ' </a>';
+        return '<a href="' + scheduleValue.assignment + '" target="_blank" class="btn class_link" role="button">View Assignment</a>';
     }
 }
 
