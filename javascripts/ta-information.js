@@ -2,7 +2,7 @@ const TAS = [
     new TA("Ryan",
         "ryandremer@gmail.com",
         // image url
-        "https://www.lds.org/api/mlu/scdn/v2/img/75bf8fea-34c4-407e-bf6f-90d05e1abb7a/MEDIUM",
+        "assets/RyanRemer.jpg",
         [
             new TATimeSlot(DayOfWeek.TUESDAY, 12, 17),
             new TATimeSlot(DayOfWeek.THURSDAY, 14, 18),
