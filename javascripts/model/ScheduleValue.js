@@ -1,11 +1,11 @@
 class ScheduleValue {
 
     preClassPrefix() {
-        return '/assignments/preclass/';
+        return 'assignments/preclass/';
     }
 
     inClassPrefix() {
-        return '/assignments/inclass/';
+        return 'assignments/inclass/';
     }
 
     constructor(name, preClassAssignment, inClassAssignment) {
