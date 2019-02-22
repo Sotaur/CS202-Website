@@ -1,18 +1,18 @@
 var classes = [
-    new ScheduleValue('What is Software Engineering?', null),
-    new ScheduleValue('UI Design Basics', 'pages/preclass_assignments/UI Design Basics.pdf'),
-    new ScheduleValue('Creating Wireframe and Screenflow Diagrams with LucidChart', null),
-    new ScheduleValue('UML Overview. UML Class Diagrams.', null),
-    new ScheduleValue('UML Sequence Diagrams', null),
-    new ScheduleValue('Java Overview', null),
-    new ScheduleValue('Writing and generating Javadoc', null),
-    new ScheduleValue('Source control, intro to Git, simple git commands', null),
-    new ScheduleValue('Git: additional commands', null),
-    new ScheduleValue('Coding Style (Java), Intellij configuration', null),
-    new ScheduleValue('Using Checkstyle', null),
-    new ScheduleValue('Code review process', null),
-    new ScheduleValue('Debugging / Logging from the command line', null),
-    new ScheduleValue('Using an IDE Debugger', null),
+    new ScheduleValue('What is Software Engineering?', null, null),
+    new ScheduleValue('UI Design Basics', 'pages/preclass_assignments/UI Design Basics.pdf', 'pages/inclass_assignments/Lab_ Mr. Music Shop (Part 1).pdf'),
+    new ScheduleValue('Creating Wireframe and Screenflow Diagrams with LucidChart', null, null),
+    new ScheduleValue('UML Overview. UML Class Diagrams.', null, null),
+    new ScheduleValue('UML Sequence Diagrams', null, null),
+    new ScheduleValue('Java Overview', null, null),
+    new ScheduleValue('Writing and generating Javadoc', null, null),
+    new ScheduleValue('Source control, intro to Git, simple git commands', null, null),
+    new ScheduleValue('Git: additional commands', null, null),
+    new ScheduleValue('Coding Style (Java), Intellij configuration', null, null),
+    new ScheduleValue('Using Checkstyle', null, null),
+    new ScheduleValue('Code review process', null, null),
+    new ScheduleValue('Debugging / Logging from the command line', null, null),
+    new ScheduleValue('Using an IDE Debugger', null, null),
 ]
 
 function fillTable() {
@@ -20,18 +20,35 @@ function fillTable() {
         $('#table_body').append(
             '<tr>' +
             '<td class="class_name">' + classes[i].name + '</td>' +
-            '<td>' + getPreReading(classes[i]) + '</td>' +
+            '<td>' + 
+            '<div class="btn-group">' +
+            getPreClassAssignment(classes[i]) +
+            getInClassAssignment(classes[i]) +
+            '</div>' 
+            + '</td>' +
             '</tr>'
         );
     }
 }
 
-function getPreReading(scheduleValue) {
-    if (scheduleValue.assignment == null) {
-        return '';
-        // return '<a href="#" target="_blank" class="btn class_link" role="button">View Assignment</a>';
-    } else {
-        return '<a href="' + scheduleValue.assignment + '" target="_blank" class="btn class_link" role="button">View Assignment</a>';
+function getPreClassAssignment(scheduleValue) {
+    if (scheduleValue instanceof ScheduleValue){
+        if (scheduleValue.preClassAssignment == null) {
+            return '';
+        } else {
+            return '<a href="' + scheduleValue.preClassAssignment + '" target="_blank" class="btn class_link" role="button">Pre-class Assignment</a>';
+        }
+    }
+}
+
+function getInClassAssignment(scheduleValue) {
+    if (scheduleValue instanceof ScheduleValue){
+        if (scheduleValue.inClassAssignment == null) {
+            return '';
+            // return '<a href="#" target="_blank" class="btn class_link" role="button">View Assignment</a>';
+        } else {
+            return '<a href="' + scheduleValue.inClassAssignment + '" target="_blank" class="btn class_link" role="button">In-class Assignment</a>';
+        }
     }
 }
 
