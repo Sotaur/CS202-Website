@@ -1,10 +1,19 @@
 :root {
-    --backgroundColor: white;
-    --lightContrastColor: lightgrey;
+    --backgroundColor: #FFFFFF;
+    --lightContrastColor: #E0E0E0;
     --darkContrastColor: rgb(80, 80, 80);
     --foregroundColor: black;
 
     --primaryColor: #002e5d;
+}
+
+.content {
+    background-color: var(--backgroundColor);
+    padding: 20px;
+}
+
+body {
+    background-color: var(--lightContrastColor);
 }
 
 .background-primary{
