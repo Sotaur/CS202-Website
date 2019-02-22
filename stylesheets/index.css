@@ -1,0 +1,17 @@
+#title{
+    background-color: var(--primary1);
+    color: var(--backgroundColor);
+}
+
+.sidebar{
+    background-color:var(--lightContrastColor)
+}
+
+.prof_row{
+    margin-top: 20px;
+}
+
+.prof_img{
+    max-height: 200px;
+    float:right;
+}
