@@ -4,8 +4,8 @@ const TAS = [
         // image url
         "assets/RyanRemer.jpg",
         [
-            new TATimeSlot(DayOfWeek.TUESDAY, 12, 17),
-            new TATimeSlot(DayOfWeek.THURSDAY, 14, 18),
+            new TATimeSlot(DayOfWeek.TUESDAY, 14, 18),
+            new TATimeSlot(DayOfWeek.FRIDAY, 14, 18),
         ]),
     new TA("John",
         "email@gmail.com",
