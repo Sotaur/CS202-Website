@@ -22,7 +22,7 @@ var announcements = [
         risus, elementum id nibh eget, condimentum sodales erat. Donec tempus urna sit amet dui pharetra, sit amet
         rutrum est aliquet. Cras tincidunt at elit sit amet rhoncus. Suspendisse elit massa, interdum ac nisi
         sagittis, molestie ornare orci. Donec semper tellus a scelerisque posuere.</p>`,
-        new Date(2019, 2, 22)
+        new Date(2019, 1, 22)
     )
 ]
 
