@@ -16,6 +16,7 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/schedule_style.css">
     <script src="javascripts/model/ScheduleValue.js"></script>
     <script src="javascripts/schedule.js"></script>
 </head>
@@ -49,21 +50,26 @@
             </ul>
         </div>
     </nav>
+    
+    <!-- content -->
+    <div class="container">
+        <h1>Schedule</h1>
+        <p>On this page you can find links to the pre-class assignments for each class this semester.</p>
+    </div>
+
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <th>Class Objective</th>
+                <th>Pre-class assignments</th>
+            </thead>
+            <tbody id="table_body">
+                <!-- Loaded in from schedule.js -->
+            </tbody>
+        </table>
+    </div>
+
 </body>
 
-<div class="container content">
-    <h1>Schedule</h1>
-    <p>On this page you can find links to the pre-class assignments for each class this semester.</p>
-    <p>#note I put one link down for a reading to see how we would like it.</p>
-    <table class="table">
-        <thead>
-            <th>Class Objective</th>
-            <th>Pre-class assignements</th>
-        </thead>
-        <tbody id="table_body">
-            <!-- Loaded in from schedule.js -->
-        </tbody>
-    </table>
-</div>
 
 </html>

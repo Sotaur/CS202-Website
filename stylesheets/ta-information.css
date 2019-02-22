@@ -1,0 +1,20 @@
+.working {
+    background-color: #E8F5E9;
+}
+
+.not_working {
+    background-color: #FFFDE7;
+}
+
+.ta_img {
+    float: right;
+    max-height: 100px;
+}
+
+#ta_rows {
+    margin: 20px 0px;
+}
+
+.ta_row {
+    margin: 20px 0px;
+}

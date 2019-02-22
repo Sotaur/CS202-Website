@@ -1,0 +1,23 @@
+/* not outlined */
+/* .class_link{
+    color: var(--backgroundColor);
+    background-color: var(--primary1);
+    border-color: var(--primary1);
+} */
+
+/* outlined */
+.class_link{
+    color: var(--primary1); 
+    background-color: var(--backgroundColor);
+    border-color: var(--primary1);
+}
+
+.class_link:hover{
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.class_name {
+    /* styles for class names */
+}

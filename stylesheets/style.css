@@ -4,7 +4,9 @@
     --darkContrastColor: rgb(80, 80, 80);
     --foregroundColor: black;
 
-    --primaryColor: #002e5d;
+    --primary: #003366;
+    --primary1: #15457d;
+    --primary2: #456595;
 }
 
 .content {
@@ -17,7 +19,7 @@ body {
 }
 
 .background-primary{
-    background-color: var(--primaryColor);
+    background-color: var(--primary);
 }
 
 .container {

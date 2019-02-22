@@ -16,6 +16,11 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/ta-information.css">
+    <script src="javascripts/model/TA.js"></script>
+    <script src="javascripts/ta-table.js"></script>
+    <script src="javascripts/ta-row.js"></script>
+    <script src="javascripts/ta-information.js"></script>
 </head>
 
 <body>
@@ -35,7 +40,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="schedule.html">Schedule</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="ta-information.html">TA Information</a>
                 </li>
                 <li class="nav-item">
@@ -51,6 +56,28 @@
 
 <div class="container content">
     <!-- for page content -->
+    <h1>TA Information</h1>
+
+    <div id="ta_rows">
+        <!-- loaded by ta-information.js / ta-rows.js -->
+    </div>
+
+    <h1>TA Schedule</h1> 
+    <table class="table table-bordered">
+        <thead>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </thead>
+        <tbody id="table_body">
+            <!-- loaded by ta-information.js / ta-table.js -->
+        </tbody>
+    </table>
+    
 </div>
 
 </html>
